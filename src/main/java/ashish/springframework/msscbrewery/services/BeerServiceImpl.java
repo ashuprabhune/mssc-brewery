@@ -13,4 +13,19 @@ public class BeerServiceImpl implements BeerService {
                 .beerName("Blue Moon")
                 .beerStyle("Kadu").build();
     }
+
+    @Override
+    public BeerDto saveNewBeer(BeerDto beerDto) {
+        return BeerDto.builder().id(beerDto.getId()).build();
+    }
+
+    @Override
+    public void updateBeer(UUID beerId, BeerDto beerData) {
+
+    }
+
+    @Override
+    public void deleteBeer(UUID beerId) {
+
+    }
 }
